@@ -6,6 +6,7 @@
  <meta name="description" content="重力加速度の数式コードです。">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <link rel="stylesheet" href="style.css">
+ <link rel="stylesheet" href="botton.css">
  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
  <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
  <script src="main.js"></script>
@@ -22,14 +23,35 @@ MathJax = {
 <script type="text/javascript" id="MathJax-script" async
   src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
 </script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<!-- ↓クリップボード操作のために使用するjsを読み込む　( https://clipboardjs.com/ ) -->
+<script src="https://cdn.jsdelivr.net/clipboard.js/1.5.13/clipboard.min.js"></script>
+ 
+<script>
+var clipboard = new Clipboard('.copy_btn');    //clipboard.min.jsが動作する要素をクラス名で指定
+ 
+//クリックしたときの挙動
+$(function(){
+    $('.copy_btn').click(function(){
+        $(this).addClass('copied');    //ボタンの色などを変更するためにクラスを追加
+        $(this).text('コピーしました');    //テキストの書き換え
+    });
+});
+</script>
+
  </head>
  <body>
  <header>重力加速度</header>
  <article>
  <section>
  <p>以下に順番にコードを書いて、それにより書かれる式を示します。</p>
-   <p>$\displaystyle g = \frac{GM}{R^2} - R\omega^2\cos^2\phi $</p>
+   
+   <ul>
+    <li><p>$\displaystyle g = \frac{GM}{R^2} - R\omega^2\cos^2\phi $</p>
+        <div class="copy_btn" data-clipboard-text="g = \frac{GM}{R^2} - R\omega^2\cos^2\phi">g = \frac{GM}{R^2} - R\omega^2\cos^2\phi</div>
+  </ul>
  </section>
  </article>
  </body>
 </html>
+

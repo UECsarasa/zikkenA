@@ -1,1 +1,73 @@
-
+<!DOCTYPE html>
+<html lang="ja">
+ <head>
+ <meta charset="utf-8">
+ <title>重力加速度</title>
+ <meta name="description" content="重力加速度の数式コードです。">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="style.css">
+ <link rel="stylesheet" href="botton.css">
+ <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+ <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+ <script src="main.js"></script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+   <script>
+MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']]
+  }
+};
+</script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+ </head>
+ <body>
+ <header>エア・トラック</header>
+ <article>
+ <section>
+ <p>以下に順番に式とそのコードを示しました。</p>
+   
+   <ul>
+    <li><p>$\displaystyle \require{physics} m\dv{v}{t} = -\mu mg\cos\theta \lambda v -\kappa v^2 \pm mg\sin\theta $</p>
+        <div class="copy_btn" data-clipboard-text="m\dv{v}{t} = -\mu mg\cos\theta \lambda v -\kappa v^2 \pm mg\sin\theta">m\dv{v}{t} = -\mu mg\cos\theta \lambda v -\kappa v^2 \pm mg\sin\theta</div>
+    <li><p>$\displaystyle \overline{v}=\frac{v_1 + v_2}{2} $</p>
+        <div class="copy_btn" data-clipboard-text="\overline{v}=\frac{v_1 + v_2}{2}">\overline{v}=\frac{v_1 + v_2}{2}</div>
+    <li><p>$\displaystyle \overline{a}=\frac{{v_1}^2 - {v_2}^2}{2} $</p>
+        <div class="copy_btn" data-clipboard-text="\overline{a}=\frac{{v_1}^2 - {v_2}^2}{2}">\overline{a}=\frac{{v_1}^2 - {v_2}^2}{2}</div>
+    <li><p>$\displaystyle \overline{a}=\mu g\cos\theta +\frac{\lambda}{m}\overline{v}+\frac{\kappa}{m}\overline{v}^2\mp g\sin\theta  $</p>
+        <div class="copy_btn" data-clipboard-text="\overline{a}=\mu g\cos\theta +\frac{\lambda}{m}\overline{v}+\frac{\kappa}{m}\overline{v}^2\mp g\sin\theta">\overline{a}=\mu g\cos\theta +\frac{\lambda}{m}\overline{v}+\frac{\kappa}{m}\overline{v}^2\mp g\sin\theta</div>
+    <li><p>$\displaystyle \frac{\overline{a}}{g}=\mu \cos\theta +\qty(\frac{\lambda}{mg})\overline{v}+\qty(\frac{\kappa}{mg})\overline{v}^2\mp\sin\theta $</p>
+        <div class="copy_btn" data-clipboard-text="\frac{\overline{a}}{g}=\mu \cos\theta +\qty(\frac{\lambda}{mg})\overline{v}+\qty(\frac{\kappa}{mg})\overline{v}^2\mp\sin\theta">\frac{\overline{a}}{g}=\mu \cos\theta +\qty(\frac{\lambda}{mg})\overline{v}+\qty(\frac{\kappa}{mg})\overline{v}^2\mp\sin\theta</div>
+    <li><p>$\displaystyle T = 2\pi\sqrt{\frac{h}{g}\qty( 1 + \frac{2r^2}{5h^2} )} $</p>
+        <div class="copy_btn" data-clipboard-text="T = 2\pi\sqrt{\frac{h}{g}\qty( 1 + \frac{2r^2}{5h^2} )}">T = 2\pi\sqrt{\frac{h}{g}\qty( 1 + \frac{2r^2}{5h^2} )}</div>
+    <li><p>$\displaystyle g = \frac{4\pi^2h}{T^2}\qty( 1 + \frac{2r^2}{5h^2} + \frac{\theta^2}{8} ) $</p>
+        <div class="copy_btn" data-clipboard-text="g = \frac{4\pi^2h}{T^2}\qty( 1 + \frac{2r^2}{5h^2} + \frac{\theta^2}{8} )">g = \frac{4\pi^2h}{T^2}\qty( 1 + \frac{2r^2}{5h^2} + \frac{\theta^2}{8} )</div>
+    <li><p>$\displaystyle \varDelta T = \frac{{T_0}^2}{(\tau \pm T_0)^2}\varDelta \tau \simeq \frac{4}{\tau^2}\Delta \tau $</p>
+        <div class="copy_btn" data-clipboard-text="T = \frac{{T_0}^2}{(\tau \pm T_0)^2}\varDelta \tau \simeq \frac{4}{\tau^2}\Delta \tau">T = \frac{{T_0}^2}{(\tau \pm T_0)^2}\varDelta \tau \simeq \frac{4}{\tau^2}\Delta \tau</div>
+    <li><p>$\displaystyle \varDelta h = \sqrt{(\varDelta h')^2+\qty(\frac{\varDelta d}{2})^2}  $</p>
+        <div class="copy_btn" data-clipboard-text="\varDelta h = \sqrt{(\varDelta h')^2+\qty(\frac{\varDelta d}{2})^2}">\varDelta h = \sqrt{(\varDelta h')^2+\qty(\frac{\varDelta d}{2})^2}</div>
+    <li><p>$\displaystyle \frac{\varDelta g}{g} = \sqrt{ \qty(\frac{\varDelta h}{h})^2 + \qty(\frac{2\varDelta T}{T})^2 } $</p>
+        <div class="copy_btn" data-clipboard-text="\frac{\varDelta g}{g} = \sqrt{ \qty(\frac{\varDelta h}{h})^2 + \qty(\frac{2\varDelta T}{T})^2 }">\frac{\varDelta g}{g} = \sqrt{ \qty(\frac{\varDelta h}{h})^2 + \qty(\frac{2\varDelta T}{T})^2 }</div>
+    <li><p>$\displaystyle \overline{g} = \frac{\frac{g_1}{\qty(\varDelta g_1)^2}+\frac{g_2}{\qty(\varDelta g_2)^2}+\cdots+\frac{g_n}{\qty(\varDelta g_n)^2}}{\frac{1}{\qty(\varDelta g_1)^2}+\frac{1}{\qty(\varDelta g_2)^2}+\cdots+\frac{1}{\qty(\varDelta g_n)^2}} $</p>
+        <div class="copy_btn" data-clipboard-text="\overline{g} = \frac{\frac{g_1}{\qty(\varDelta g_1)^2}+\frac{g_2}{\qty(\varDelta g_2)^2}+\cdots+\frac{g_n}{\qty(\varDelta g_n)^2}}{\frac{1}{\qty(\varDelta g_1)^2}+\frac{1}{\qty(\varDelta g_2)^2}+\cdots+\frac{1}{\qty(\varDelta g_n)^2}}">\overline{g} = \frac{\frac{g_1}{\qty(\varDelta g_1)^2}+\frac{g_2}{\qty(\varDelta g_2)^2}+\cdots+\frac{g_n}{\qty(\varDelta g_n)^2}}{\frac{1}{\qty(\varDelta g_1)^2}+\frac{1}{\qty(\varDelta g_2)^2}+\cdots+\frac{1}{\qty(\varDelta g_n)^2}}</div>
+    <li><p>$\displaystyle \varDelta g = \frac{1}{\sqrt{\frac{1}{\qty(\varDelta g_1)^2}+\frac{1}{\qty(\varDelta g_2)^2}+\cdots+\frac{1}{\qty(\varDelta g_n)^2}}} $</p>
+        <div class="copy_btn" data-clipboard-text="g = \frac{1}{\sqrt{\frac{1}{\qty(\varDelta g_1)^2}+\frac{1}{\qty(\varDelta g_2)^2}+\cdots+\frac{1}{\qty(\varDelta g_n)^2}}}">g = \frac{1}{\sqrt{\frac{1}{\qty(\varDelta g_1)^2}+\frac{1}{\qty(\varDelta g_2)^2}+\cdots+\frac{1}{\qty(\varDelta g_n)^2}}}</div>
+  </ul>
+ </section>
+ </article>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/clipboard.js/1.5.13/clipboard.min.js"></script>
+ 
+<script>
+var clipboard = new Clipboard('.copy_btn'); 
+$(function(){
+    $('.copy_btn').click(function(){
+        $(this).addClass('copied'); 
+    });
+});
+</script>
+ </body>
+</html>
